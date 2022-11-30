@@ -1,0 +1,20 @@
+version: '3'
+services:
+  nettewebs:
+    container_name: nette
+    build:
+      context: .
+      dockerfile: ./.docker/Dockerfile
+    image: nette
+    volumes:
+      - ./webs/:/var/www/fykos-webs
+      - ./logs/:/var/log/
+      #temporal fixes
+      #- ./.docker/fykos-webs.conf:/etc/apache2/sites-enabled/fykos-webs.conf
+      #- ./.docker/start.sh:/var/www/start.sh
+    ports:
+      - '127.0.0.1:80:80'
+      - '127.0.0.1:443:443'
+      # - '80:80'
+      # First line allows access only from this computer, second one from all computers in your network.
+      # Only one line can be uncommented at a time!
