@@ -1,4 +1,4 @@
-[submodule "web"]
+[submodule "webs"]
 	path = webs
 	url = https://github.com/vyfuk/webs.git
 	branch = dev
