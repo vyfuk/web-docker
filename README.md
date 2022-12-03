@@ -14,6 +14,6 @@
 ```
 
 2. Clone the repository `git clone --recurse-submodules ...`
-
-3. Run `docker-compose up` it takes more than 500s.
-4. Done.
+3. Run `git config core.fileMode false` to suppers chmod being a change. 
+4. Run `docker-compose up` it takes more than 500s.
+5. Done.

@@ -8,7 +8,7 @@ services:
     image: nette
     volumes:
       - ./webs/:/var/www/fykos-webs
-      - ./logs/:/var/log/
+      - ./log/:/var/log/
       #temporal fixes
       #- ./.docker/fykos-webs.conf:/etc/apache2/sites-enabled/fykos-webs.conf
       #- ./.docker/start.sh:/var/www/start.sh
