@@ -1,6 +1,7 @@
 version: '3'
 services:
   nettewebs:
+    image: nettewebs
     container_name: nettewebs
     build:
       context: .
